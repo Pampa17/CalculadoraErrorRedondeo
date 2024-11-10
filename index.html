@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Errores de Redondeo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Errores de Redondeo</h1>
+    </header>
+    
+    <section id="calculadora">
+        <h2>Calculadora de Errores</h2>
+        <label for="valor_real">Valor Real:</label>
+        <input type="number" id="valor_real" step="any" placeholder="Ingresa el valor real">
+        
+        <label for="valor_aproximado">Valor Aproximado:</label>
+        <input type="number" id="valor_aproximado" step="any" placeholder="Ingresa el valor aproximado">
+        
+        <button onclick="calcularErrores()">Calcular Errores</button>
+        
+        <div id="resultados">
+            <h3>Resultados</h3>
+            <p id="error_absoluto"></p>
+            <p id="error_relativo"></p>
+            <p id="error_porcentual"></p>
+        </div>
+    </section>
+    
+    <section id="educativa">
+        <h2>Problemas de Redondeo</h2>
+        <p>Los errores de redondeo ocurren al aproximar números debido a las limitaciones en su representación decimal. Estos errores afectan la precisión y pueden tener consecuencias significativas en áreas como la ingeniería y las finanzas.</p>
+        <h3>Tipos de Errores</h3>
+        <ul>
+            <li><strong>Error absoluto:</strong> Es la diferencia entre el valor real y el valor aproximado.</li>
+            <li><strong>Error relativo:</strong> Es el cociente entre el error absoluto y el valor real.</li>
+            <li><strong>Error porcentual:</strong> Es el error relativo expresado en porcentaje.</li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
