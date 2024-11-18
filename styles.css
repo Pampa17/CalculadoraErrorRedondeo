@@ -54,3 +54,8 @@ button:hover {
     font-size: 1.1rem;
     color: #555;
 }
+
+img {
+    height: 200px;
+    width: 430px;
+}
